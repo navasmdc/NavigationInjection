@@ -13,7 +13,7 @@ interface ViewManager {
 
     fun getContext() : Context
 
-    fun launchActivity(intent: Intent)
+    fun launchActivity(intent: Intent?)
 
     fun getString(idResource : Int) : String
 

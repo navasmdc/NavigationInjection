@@ -72,7 +72,7 @@ abstract class BaseFragment : Fragment(), NavigationManager, ViewManager {
     //region ViewManager implementation
     override fun getContext() : Context = activity
 
-    override fun launchActivity(intent: Intent) = activity.startActivity(intent)
+    override fun launchActivity(intent: Intent?) = activity.startActivity(intent)
 
     override fun getView() : View = binding.root
 
